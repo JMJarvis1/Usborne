@@ -5,7 +5,7 @@ import random
 if platform.system == "Windows":
     os.system("cls")
 else:
-     os.system("clear")
+    os.system("clear")
 
 
 g = random.randint(1, 20)
@@ -19,14 +19,14 @@ print("TYPE IN FORCE")
 
 for tries in range(10):
     force = int(input("> "))
-    
+
     if force > r:
-        print("TOO HIGH") 
+        print("TOO HIGH")
     elif force < r:
         print("TOO LOW")
     elif force == r:
         print("GOOD TAKE OFF")
         break
-    
+
     if tries == 9:
         print("YOU FAILED - \nTHE ALIENS GOT YOU. ")
